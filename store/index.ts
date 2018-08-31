@@ -1,3 +1,5 @@
+import {Vue} from "~/node_modules/nuxt-property-decorator";
+
 export const state = () => ({
   people: []
 })
@@ -13,6 +15,6 @@ export const actions = {
     const people = await app.$axios.$get(
       "./random-data.json"
     )
-    commit("setPeople", people.slice(0, 10))
+    commit("setPeople", people.slice(0, 2))
   }
 }

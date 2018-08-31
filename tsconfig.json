@@ -9,7 +9,7 @@
     "noImplicitThis": false,
     "strictNullChecks": true,
     "removeComments": true,
-    "suppressImplicitAnyIndexErrors": true,
+    "suppressImplicitAnyIndexErrors": false,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "baseUrl": ".",
