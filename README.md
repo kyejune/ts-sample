@@ -24,7 +24,7 @@ $ npm run generate
 1. install nuxt with typescript
    : https://github.com/nuxt-community/typescript-template
 
-2. install ssss
+2. install scss
    : https://nuxtjs.org/api/configuration-css
 ```
 
