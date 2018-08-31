@@ -26,6 +26,7 @@ $ npm run generate
 
 2. install scss
    : https://nuxtjs.org/api/configuration-css
+     >> <style scoped lang="scss"> lang 정의 필요
 ```
 
 
@@ -33,7 +34,7 @@ $ npm run generate
 
 ## Plugins
 ```
-https://github.com/vuejs/vue-class-component
+https://github.com/surmon-china/vue-awesome-swiper [ 슬라이드 배너용으로 추가 ]
 
 
 ```
@@ -42,9 +43,18 @@ https://github.com/vuejs/vue-class-component
 ## DTS( TypeScript Definition Manager )
 http://definitelytyped.org/
 ```
-npm install --save-dev @types/{module_name} 설치되면 바로 사용하면되고, 없으면 직접 작성해야함 
+npm install --save-dev @types/{module_name} 설치되면 바로 사용하면되고, 없으면 직접 작성.
+index.d.ts, @types는 기본경로에 포함됨.
+
+
 ```
 
+
+
+## ErrorCase
+```
+none
+```
 
 
 

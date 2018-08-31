@@ -41,11 +41,12 @@
     })
 
     export default class extends Vue {
-        @State people
+
+        @State people;
 
         // Property
-        mySwiper: Swiper
-        swiperOption: SwiperOptions = SWIPER_COMMON
+        mySwiper: Swiper;
+        swiperOption: SwiperOptions = SWIPER_COMMON;
 
         // Life Cycle
         mounted() {
