@@ -1,6 +1,15 @@
-<template xmlns:v-swiper="http://www.w3.org/1999/xhtml">
+<template>
     <section>
         <h1 class="header">Nuxt TypeScript Sample</h1>
+
+
+        <div>
+            <h4>[browser detect]</h4>
+
+            <button @click="getBrowserInfo">get browser information</button>
+            <pre>{{ browserInfoString }}</pre>
+
+        </div>
 
         <div>
             <h4>[vue-awesome-swiper]</h4>
@@ -33,12 +42,15 @@
     import {State} from "vuex-class"
     import Card from "~/components/Card.vue"
     import {SWIPER_COMMON} from "../plugins/const";
+    import BrowserU from "../plugins/BrowserU";
+
 
     @Component({
         components: {
             Card,
         },
     })
+
 
     export default class extends Vue {
 
@@ -47,6 +59,21 @@
         // Property
         mySwiper: Swiper;
         swiperOption: SwiperOptions = SWIPER_COMMON;
+        browserInfoString:string = '';
+
+        isM:string = '...';
+
+        getBrowserInfo(){
+            this.browserInfoString = `
+                isMobile: ${BrowserU.isMobile()},
+                isIphone: ${BrowserU.isIphone()},
+                isAndroid: ${BrowserU.isAndroid()},
+                isIE: ${BrowserU.isIE()},
+
+                'css 활용을 위해 브라우저 시작과 동시에 body 속성에 is-i, is-a, is-m, is-e 해당하는 요소는 기본 삽입됩니다.'
+            `;
+
+        }
 
         // Life Cycle
         mounted() {

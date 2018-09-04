@@ -53,7 +53,8 @@ index.d.ts, @types는 기본경로에 포함됨.
 
 ## ErrorCase
 ```
-none
+ - window.console 를 덮어쓰려면 readOnly라고 경고가 뜨고 컴파일이 되지 않습니다.
+   이렇게 필요한 기능이지만 ts에러로 컴파일이 안될때에는 해당구문 위에 // @ts-ignore 주석을 추가해줌으로 회피가능합니다.
 ```
 
 

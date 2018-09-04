@@ -65,8 +65,13 @@ module.exports = {
     ],
     axios: {},
 
+    dev: (process.env.NODE_ENV !== 'production' ),
+
     plugins: [
         { src: '~/plugins/const', ssr: false },
-        { src: '~/plugins/vue-awesome-swiper', ssr: false }
+        { src: '~/plugins/vue-awesome-swiper', ssr: false },
+        { src: '~/plugins/BrowserU', ssr: false },
+        { src: '~/plugins/StringU', ssr: false },
+        { src: '~/plugins/ArrayU', ssr: false }
     ]
 }

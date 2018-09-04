@@ -1,5 +1,5 @@
 
-
+/* Swiper 기본 옵션 */
 export const SWIPER_COMMON:SwiperOptions = {
     loop: true,
     pagination: {

@@ -5,7 +5,7 @@
         </p>
         <img :src="'https://robohash.org/' + person.first_name + '_' + person.last_name"/>
         <div>
-            <button @click="changeData">change data</button>
+            <button @click="dataExample = '56789'">change data</button>
             <button @click="changeComplexObject">change complex object</button>
         </div>
     </div>
