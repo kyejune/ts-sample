@@ -74,4 +74,8 @@ export default {
     isIE: (): number | boolean => {
         return isE;
     },
+
+    getUrlParams: (): object => {
+        return { 'name': 'valeu' }
+    }
 }

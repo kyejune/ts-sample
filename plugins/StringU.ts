@@ -13,7 +13,7 @@ export default {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     },
 
-    /* YYYY.MM.DD hh:mm:ss */
+    /* timestamp to YYYY.MM.DD hh:mm:ss */
     dateFormat: ( dateTime: number ): string => {
         const date:Date = new Date( dateTime - timezoneOffset );
         return date.toISOString().substr( 0, 19 ).replace(/-/g, '.').replace('T', ' ');
